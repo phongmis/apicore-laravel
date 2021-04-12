@@ -1,5 +1,5 @@
 {
-    "name": "ndp/laravel",
+    "name": "pmis/laravel-skeleton",
     "type": "project",
     "description": "A Skeleton Laravel Application.",
     "keywords": ["framework", "laravel"],
