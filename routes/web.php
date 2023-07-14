@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function (\Illuminate\Http\Request $request) {
+    if(!empty($request->session()->get('auth'))) {
+        return view('home');
+    } else {
+        return redirect('login');
+    }
+
 });
 
 Auth::routes();
